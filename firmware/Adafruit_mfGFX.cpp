@@ -65,7 +65,7 @@ void Adafruit_GFX::setFont(uint8_t f) {
     case TIMESNR_8:
       fontData = timesNewRoman_8ptBitmaps;
 	  fontDesc = timesNewRoman_8ptDescriptors;
-      fontKern = 1;
+      fontKern = 0;
       break;
 #endif
 #ifdef CENTURYGOTHIC8
@@ -79,35 +79,35 @@ void Adafruit_GFX::setFont(uint8_t f) {
     case ARIAL_8:
       fontData = arial_8ptBitmaps;
 	  fontDesc = arial_8ptDescriptors;
-      fontKern = 1;
+      fontKern = 2;
       break;
 #endif
 #ifdef COMICSANSMS8
     case COMICS_8:
       fontData = comicSansMS_8ptBitmaps;
 	  fontDesc = comicSansMS_8ptDescriptors;
-      fontKern = 1;
+      fontKern = 3;
       break;
 #endif
 #ifdef GLCDFONTDEFAULT
     case GLCDFONT:
       fontData = glcdfontBitmaps;
 	  fontDesc = glcdfontDescriptors;
-      fontKern = 1;
+      fontKern = 4;
       break;
 #endif
 #ifdef TESTFONT
    case TEST:
       fontData = testBitmaps;
 	  fontDesc = testDescriptors;
-      fontKern = 1;
+      fontKern = 5;
       break;
 #endif
 	default:
       font = GLCDFONT;
       fontData = glcdfontBitmaps;
 	  fontDesc = glcdfontDescriptors;
-      fontKern = 1;
+      fontKern = 6;
       break;
   }
 
