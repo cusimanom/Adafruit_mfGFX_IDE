@@ -103,7 +103,7 @@ void Adafruit_GFX::setFont(uint8_t f) {
       fontKern = 1;
       break;
 #endif
-	case ARIAL_8:
+	default:
       fontData = arial_8ptBitmaps;
 	  fontDesc = arial_8ptDescriptors;
       fontKern = 1;
