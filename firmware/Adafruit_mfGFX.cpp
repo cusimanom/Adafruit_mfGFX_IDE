@@ -82,6 +82,13 @@ void Adafruit_GFX::setFont(uint8_t f) {
       fontKern = 1;
       break;
 #endif
+#ifdef ARIAL16
+    case ARIAL_16:
+      fontData = arial_16ptBitmaps;
+	  fontDesc = arial_16ptDescriptors;
+      fontKern = 1;
+      break;
+#endif
 #ifdef COMICSANSMS8
     case COMICS_8:
       fontData = comicSansMS_8ptBitmaps;
