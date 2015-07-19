@@ -26,7 +26,7 @@ Please read README.pdf for details
 #define TIMESNR_8	0
 #define CENTURY_8	1
 #define ARIAL_8		2
-#define ARIAL_16		3
+#define ARIAL_16	3
 #define COMICS_8	4
 #define GLCDFONT	5
 #define TEST		6
