@@ -10,6 +10,8 @@ Please read README.pdf for details
  
 #include "fonts.h"
 
+#ifdef ARIAL16
+
 const uint_8 arial_16ptBitmaps[] = 
 {
 	0x20, 0x7F,	//Start Character, End Character
@@ -206,6 +208,8 @@ const fontDescriptors arial_16ptDescriptors[] =
 	{6, 21, 3339},
 	{10, 21, 3360},
 };
+
+#endif //ARIAL16
 
 #ifdef TIMESNEWROMAN8
 // Character bitmaps for timesNewRoman 8pt
