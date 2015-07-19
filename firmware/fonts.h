@@ -18,6 +18,7 @@ Please read README.pdf for details
 //#define TIMESNEWROMAN8
 //#define CENTURYGOTHIC8
 #define ARIAL8
+#define ARIAL16
 //#define COMICSANSMS8
 //#define TESTFONT
 
@@ -25,9 +26,10 @@ Please read README.pdf for details
 #define TIMESNR_8	0
 #define CENTURY_8	1
 #define ARIAL_8		2
-#define COMICS_8	3
-#define GLCDFONT	4
-#define TEST		5
+#define ARIAL16		3
+#define COMICS_8	4
+#define GLCDFONT	5
+#define TEST		6
 
 #define FONT_START 0
 #define FONT_END 1
@@ -53,6 +55,11 @@ extern const FontDescriptor centuryGothic_8ptDescriptors[];
 #ifdef ARIAL8
 extern const uint8_t arial_8ptBitmaps[];
 extern const FontDescriptor arial_8ptDescriptors[];
+#endif
+
+#ifdef ARIAL16
+extern const uint8_t arial_16ptBitmaps[];
+extern const FontDescriptor arial_16ptDescriptors[];
 #endif
 
 #ifdef COMICSANSMS8
